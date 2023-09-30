@@ -1,0 +1,58 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.taskbar {
+    background-color: #222; /* Taskbar background color */
+    padding: 10px 20px; /* Added padding for logo and buttons */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* Set a high z-index to make sure it's on top of other content */
+    display: flex;
+    justify-content: space-between; /* Align logo to the left and buttons to the right */
+}
+
+.logo {
+    display: inline-block;
+    margin-right: 20px; /* Adjust the spacing between the logo and buttons */
+}
+
+.container {
+    margin-top: 40px; /* Add margin to the top to avoid overlap with the taskbar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.button-container {
+    display: flex;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 5px 10px 10px 0;
+    border: none; /* Remove the border */
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    background-color:#050505; /* Background color for the button */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
