@@ -1,5 +1,5 @@
-const ctx = document.getElementById('stockChart').getContext('2d');
-const stockChart = new Chart(ctx, {
+const liveCtx = document.getElementById('liveStockChart').getContext('2d');
+const liveStockChart = new Chart(liveCtx, {
     type: 'line',
     data: {
         labels: [],
@@ -71,7 +71,7 @@ const stockChart = new Chart(ctx, {
 
 let elapsedTime = 0;
 
-function updateChart() {
+function updateLiveChart() {
     const labels = Array.from({ length: 10 }, (_, index) => elapsedTime + index);
     
     // Simulated stock prices for dataset 1 within the range of 800 to 900
@@ -80,12 +80,13 @@ function updateChart() {
     // Simulated stock prices for dataset 2 within the range of 800 to 900
     const stockValues2 = labels.map(() => 800 + Math.random() * 100);
 
-    stockChart.data.labels = labels;
-    stockChart.data.datasets[0].data = stockValues1;
-    stockChart.data.datasets[1].data = stockValues2;
+    liveStockChart.data.labels = labels;
+    liveStockChart.data.datasets[0].data = stockValues1;
+    liveStockChart.data.datasets[1].data = stockValues2;
 
-    stockChart.update();
+    liveStockChart.update();
     elapsedTime += 1; // Increase elapsed time by 1 second
 }
 
-setInterval(updateChart, 2000);  
+setInterval(updateLiveChart, 1000);  
+
