@@ -31,3 +31,11 @@ a {
     text-decoration: none;
     color: #0074d9;
 }
+
+.back-arrow {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    font-size: 40px;
+    cursor: pointer;
+}
