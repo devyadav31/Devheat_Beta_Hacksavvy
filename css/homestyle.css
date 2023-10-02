@@ -1,7 +1,7 @@
 body {
     background-color: black;
     background-image: url('../images/home.jpg') ;
-    background-position:fixed;
+    background-position: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
@@ -14,41 +14,39 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin: 0;
+    opacity: 0.7;
 }
 
 .taskbar {
-    background-color: #222; /* Taskbar background color */
-    padding: 10px 20px; /* Added padding for logo and buttons */
+    background-color: #222;
+    padding: 10px 20px;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    z-index: 100; /* Set a high z-index to make sure it's on top of other content */
+    width: 97%;
+    z-index: 100;
     display: flex;
-    justify-content: space-between; /* Align logo to the left and buttons to the right */
+    justify-content: space-between;
 }
 
 .logo {
     display: inline-block;
-    margin-right: 20px; /* Adjust the spacing between the logo and buttons */
+    margin-right: 20px;
+}
+#homelogo {
+    margin-bottom: 20px;
 }
 
 .container {
-    margin-top: 40px; /* Add margin to the top to avoid overlap with the taskbar */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
+    margin-top: 100px; /* Adjusted margin */
     margin-bottom: 20px;
+    text-align: center;
 }
 
 h1 {
     font-size: 60px;
-    margin-top: 515px;
-    text-shadow: 6px 6px  rgb(7, 48, 75);
+    margin-top: 700px; 
+    text-shadow: 6px 6px rgb(7, 48, 75);
     text-align: center;
 }
 
@@ -58,19 +56,20 @@ h1 {
 }
 
 .button {
-    padding: 5px 10px; /* Reduced padding */
-    margin: 5px 10px 10px 0;
+    padding: 5px 10px;
+    margin: 5px 10px 10px 5px;
+    
     border: none;
     border-radius: 6px;
     text-decoration: none;
     color: white;
     font-size: 16px;
-    background-color:#222; /* Background color for the button */
+    background-color: #222;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .button:hover {
-    background-color: #0056b3; /* Darker background color on hover */
+    background-color: #0056b3;
 }
 
 canvas {
