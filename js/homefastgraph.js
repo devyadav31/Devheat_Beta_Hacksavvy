@@ -6,7 +6,7 @@ const fastStockChart = new Chart(fastCtx, {
         datasets: [{
             label: 'Share',
             borderColor: 'rgb(54, 162, 235)',
-            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            backgroundColor: 'rgba(54, 162, 235, 0.25)',
             borderWidth: 2,
             pointRadius: 2,
             pointBackgroundColor: 'rgba(54, 162, 235, 1)',

@@ -7,7 +7,7 @@ const liveStockChart = new Chart(liveCtx, {
             {
                 label: 'Stock Price 1',
                 borderColor: 'rgb(54, 162, 235)',
-                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                backgroundColor: 'rgba(54, 162, 235, 0.35)',
                 borderWidth: 2,
                 pointRadius: 2,
                 pointBackgroundColor: 'rgba(54, 162, 235, 1)',
@@ -18,7 +18,7 @@ const liveStockChart = new Chart(liveCtx, {
             {
                 label: 'Stock Price 2',
                 borderColor: 'rgb(255, 99, 132)', // Different color
-                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                backgroundColor: 'rgba(255, 99, 132, 0.35)',
                 borderWidth: 2,
                 pointRadius: 2,
                 pointBackgroundColor: 'rgba(255, 99, 132, 1)',
@@ -62,7 +62,7 @@ const liveStockChart = new Chart(liveCtx, {
                     labelString: 'Price (INR)'
                 },
                 gridLines: {
-                    color: 'rgba(0, 0, 0, 0.1)',
+                    color: 'rgba(0, 0, 0, 0.6)',
                 }
             }]
         }
