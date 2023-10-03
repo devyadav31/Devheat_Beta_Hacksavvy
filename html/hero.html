@@ -3,51 +3,31 @@
     <head>
         <title>HERO</title>
         <link rel="stylesheet" type="text/css" href="../css/hero.css">
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #2b80c5;
-                margin-left: 0%;
-                padding: 0;
-                display: flex;
-                justify-content: center;
-                height:100vh;
-                
-            }
-    
-            form {
-                background-image: url("../images/blackblur.jpg");
-                padding: 90px;
-                border-radius: 10px;
-                box-shadow: 2px 2px 10px rgba(248, 217, 217, 0.726);
-                width: 300px;
-                margin-left: 35%;
-            }
-    
-            label {
-                display: block;
-                margin-bottom: 8px;
-                font-weight: bold;
-                color: aliceblue;
-            }
-    
-            input {
-                width: 100%;
-                padding: 8px;
-                margin-bottom: 16px;
-                box-sizing: border-box;
-            }
-    
-            input[type="submit"] {
-                background-color: #4caf50;
-                color: #fff;
-                cursor: pointer;
-            }
-    
-            input[type="submit"]:hover {
-                background-color: #45a049;
-            }
-        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['Mkt cap', '645'],
+          ['Mkt cap',     1091],
+          ['ROE',      206],
+          ['Book Value',  107],
+          ['Face Value', 897],
+          ['Debt to Equity',    76]
+        ]);
+
+        var options = {
+          
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
     </head>
 
         <body>
@@ -62,26 +42,19 @@ The company has a wide range of motorcycles and scooters catering to diverse cus
 Hero MotoCorp is known for its focus on fuel efficiency, reliability, and affordability.
 With a strong market presence in India and a growing international footprint, 
 Hero MotoCorp continues to be a key player in the global two-wheeler industry.</h1>
-
-<form action="#" method="post">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required>
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-    
-    <a href="vedanta.html"><input type="submit" value="Register"></a>
-</form>
+<br><br>
+<div id="piechart_3d" style="width: 900px; height: 500px;"></div>
 <div class="footer">
+    
 <b>FAQs
 Have questions about investing on Mars? Check out our FAQs for answers to common queries.
 If you can't find what you're looking for, reach out to our support team.
 
 Get Started
 Ready to be part of the next frontier in sustainable living? Sign up now and embark on a journey toward a greener Mars.
+<h3>Reach Us At
+<i class="fa-brands fa-facebook"></i>&nbsp;<i class="fa-brands fa-facebook-messenger"></i>&nbsp;<i class="fa-brands fa-instagram"></i>&nbsp;
+</h3>
 </b>
 </footer>
 </div>
