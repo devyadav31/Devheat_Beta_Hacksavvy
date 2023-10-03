@@ -56,7 +56,9 @@ const fastStockChart = new Chart(fastCtx, {
 });
 
 let startTime = Date.now();
+const data=()=>{
 
+}
 function updateFastChart() {
     const elapsedTimeInSeconds = (Date.now() - startTime) / 1000;
     const labels = fastStockChart.data.labels;
