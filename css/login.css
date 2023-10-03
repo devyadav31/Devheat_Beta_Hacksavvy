@@ -4,6 +4,7 @@ body {
     background-repeat: no-repeat;
     background-color: #0e0627; /* Skybluish grey background */
     font-family: Arial, sans-serif;
+    opacity: 0.8;
 }
 
 .container {
