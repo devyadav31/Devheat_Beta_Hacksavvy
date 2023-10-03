@@ -29,15 +29,15 @@ pre{
     text-align: center;
     font-size: 20px;
     color: rgb(0, 0, 0);
-    background-color: azure;
+    background-color: rgb(172, 241, 241);
     margin-left: -1%;
 }
 .footer{
-   background-color:  rgb(179, 41, 23);
+   background-color:  rgb(102, 225, 241);
    height: 350px;
-   width: 1440px;
+   width: 1480px;
    color: black;
-   margin-left: 1%;
+   margin-left: -1%;
    margin-bottom: -1.8%;
    box-shadow: 0px 10px 10px 0px rgb(39, 1, 1);
 }
