@@ -8,30 +8,52 @@
     background-color: rgb(245, 247, 168);
 }
 body{
-    background-image: url("../images/blackblur.jpg");
+    background-image: url("../images/jhf.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     border-radius: 10px;
 }
 .jk{
     margin-left: 6%;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 h2{
     text-align: center;
     font-size: 50px;
     background-color: rgb(24, 52, 70);
-    
+    color: beige;
+    border-radius: 4px;
+    box-shadow: 0px 20px 20px 0px grey;
+    position: relative; /* Add relative positioning */
+    margin-left: -1%;
 }
 pre{
     text-align: center;
     font-size: 20px;
     color: rgb(0, 0, 0);
     background-color: azure;
+    border-radius: 15px;
+    margin-left: -1%;
 }
 .footer{
    background-color: rgb(253, 177, 37);
-   height: 300px;
+   height: 140px;
    width: 1440px;
    color: black;
+   font-size: 20px;
+   padding-top: 4%;
+}
+p{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background-color: azure;
+    height: 80px;
+    width: 1440px;
+    padding-top: 4%;
+    margin-top: 0%;
+    border-radius: 15px;
+}
+h3{
+    text-align: center;
 }
