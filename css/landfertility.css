@@ -1,0 +1,140 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d6e7f1;
+    margin: 0 px;
+    padding: 0;
+    background-image: url(../images/sdd.jpg);
+    opacity: 0.8;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+    opacity: 0.8;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+/* Main content styling */
+.main-content {
+    padding: 2em 0;
+    color: #d6e7f1;
+    font-size: 22px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    opacity: 0.8;
+    
+}
+
+/* Container styling */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .main-content {
+        padding: 1em 0;
+        
+}
+    }
+}
+pre{
+    font-size: 20px;
+}
+h2{
+    text-align: center;
+    font-size: 33px;
+}
+h3{
+    margin-left: 0px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.slider {
+    position: relative;
+    width: 60%;
+    overflow: hidden;
+    margin-left: 300px;
+}
+.images {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    border-radius: 9px;
+}
+.images img {
+    height: 400px;
+    width: 100%;
+    transition: all 0.15s ease;
+}
+.images input {
+    display: none;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+.dots label {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    margin: 5px;
+}
+.dots label:hover {background: #fff;}
+#img1:checked ~ .m1 {
+    margin-left: 0;
+}
+#img2:checked ~ .m2 {
+    margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+    margin-left: -200%;
+}
+#img4:checked ~ .m4 {
+    margin-left: -300%;
+}
+.hh{
+    font-size: 28px;
+}
+.back-button {
+    padding: 5px 10px;
+    margin: 5px 10px 10px 0;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    background-color: #222;
+    transition: background-color 0.3s, color 0.3s;
+}
