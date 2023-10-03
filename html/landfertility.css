@@ -23,9 +23,10 @@ header {
 }
 
 header h1 {
-    font-size: 2em;
+    font-size: 3.5em;
 }
 
+   
 /* Main content styling */
 .main-content {
     padding: 2em 0;
@@ -80,7 +81,7 @@ h3{
     position: relative;
     width: 60%;
     overflow: hidden;
-    margin-left: 300px;
+    margin-left: 250px;
 }
 .images {
     display: flex;
@@ -125,4 +126,7 @@ h3{
 }
 .hh{
     font-size: 28px;
+}
+p{
+    margin-left: 250px;
 }
