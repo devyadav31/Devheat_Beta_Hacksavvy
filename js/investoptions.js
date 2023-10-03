@@ -43,14 +43,14 @@ function displayInvestments(investmentsToDisplay) {
     investmentList.innerHTML = '';
     investmentsToDisplay.forEach(investment => {
         const listItem = document.createElement('li');
-        const companyLink = document.createElement('a');
-        companyLink.href = `company/${investment.name.toLowerCase().replace(' ', '-')}.html`;
-        companyLink.textContent = `${investment.name}`;
-        listItem.appendChild(companyLink);
+        const companyName = document.createElement('strong');
+        companyName.textContent = `${investment.name}`;
+        listItem.appendChild(companyName);
         listItem.innerHTML += ` - Size: ${investment.size}, Industry: ${investment.industry}, Current Price: ${investment.currentPrice}, 52-Week High: ${investment.week52High}, Volume: ${investment.volume}`;
         investmentList.appendChild(listItem);
     });
 }
+
 
 // Initial display of investments
 displayInvestments(investments);
