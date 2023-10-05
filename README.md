@@ -63,8 +63,9 @@ For research purpose anyone can access our website without any charges.
 
 On Home page click on "Investment Options" to see a list of companies that you can filter by size—small, mid, or large. Choose the filter that matches your preference for easy navigation.
 
+following video illusrrates the the working of the video
 
-
+https://youtu.be/o5nhnOrs_1o?si=CXOBRH_-nPz2ke43
 
 
 ## 🚀 About Our Team ##
