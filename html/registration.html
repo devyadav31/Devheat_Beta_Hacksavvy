@@ -10,7 +10,8 @@
     <div class="container">
         <span class="close-button" onclick="closeForm()">&#10006;</span>
         <h1>Register</h1>
-        <form action="../php/register.php" method="POST"> <!-- Specify the action and method -->
+        <form action="../php/register.php?redirect=login.php?" method="POST">
+
             <div class="form-group">
                 <label for="new-username">Username:</label>
                 <input type="text" id="new-username" name="new-username" placeholder="Choose a username" required>

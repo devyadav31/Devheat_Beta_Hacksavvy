@@ -1,5 +1,6 @@
 <?php
 require_once "config.php";
+session_start();
 
 $username = $password = $confirm_password = "";
 $username_err = $password_err = $confirm_password_err = "";
@@ -43,8 +44,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     }
 
     // Check for confirm password field
-    if (trim($_POST['password']) !=  trim($_POST['confirm_password'])) {
-        $password_err = "Passwords should match";
+    if (trim($_POST['password']) != trim($_POST['confirm_password'])) {
+        $confirm_password_err = "Passwords should match";
     }
 
     // If there were no errors, go ahead and insert into the database
@@ -60,7 +61,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
             // Try to execute the query
             if (mysqli_stmt_execute($stmt)) {
-                header("location: login.php");
+                // Set a session variable to indicate successful registration
+                $_SESSION['registration_success'] = true;
+
+                // Redirect to the login page with a query parameter
+                header("location: ../html/login.html?registration_success=true");
             } else {
                 echo "Something went wrong... cannot redirect!";
             }
