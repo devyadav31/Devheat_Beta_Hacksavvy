@@ -1,0 +1,20 @@
+h1{
+    
+    color: azure;
+
+}
+body{
+    background-image: url("../images/mars.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hh{
+    opacity: 0.7;
+    margin-left: 200px;
+}
+h2{
+    background-color: black;
+    color: azure;
+    width: 850px;
+    padding-left: 50px;
+}
