@@ -20,12 +20,15 @@ header {
     padding: 1em 0;
     text-align: center;
     opacity: 0.8;
+    margin-left: 0%;
+    width: 1500px;
 }
 
 header h1 {
-    font-size: 2em;
+    font-size: 3.5em;
 }
 
+   
 /* Main content styling */
 .main-content {
     padding: 2em 0;
@@ -40,7 +43,7 @@ footer {
     text-align: center;
     padding: 1em 0;
     opacity: 0.8;
-    
+    width: 1500px;
 }
 
 /* Container styling */
@@ -80,7 +83,7 @@ h3{
     position: relative;
     width: 60%;
     overflow: hidden;
-    margin-left: 300px;
+    margin-left: 250px;
 }
 .images {
     display: flex;
@@ -125,4 +128,14 @@ h3{
 }
 .hh{
     font-size: 28px;
+}
+p{
+    margin-left: 250px;
+}
+.gh{
+    margin-left: 130px;
+    padding-left: 15%;
+    font-size: 29px;
+    height: 100px;
+    margin-top: 100px;
 }
