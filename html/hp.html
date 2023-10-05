@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HOMESTEAD - Interplanetary Tourism</title>
+    <link rel="stylesheet" type="text/css" href="../css/environmental.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", {packages:["corechart"]});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Category', 'Value'],
+                ['Market Cap', 1520],
+                ['ROE', 312],
+                ['Book Value', 725],
+                ['Face Value', 1010],
+                ['Debt to Equity', 20]
+            ]);
+
+            var options = {
+                is3D: true,
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+<body>
+<div class="company-header">
+    <img src="../images/homestead.png" height="100px" width="500px" alt="Homestead Logo">
+</div>
+<pre><br><br>
+<b>Homestead - Your Gateway to the Stars</b>
+<br><br>
+<div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+</pre>
+<p>If you're a Mars colonist looking for exciting investment opportunities, consider Homestead - the pioneer in interplanetary tourism. Homestead offers thrilling journeys to various celestial bodies, including Mars, providing a unique and unforgettable experience for both tourists and investors.</p>
+</body>
+<footer>
+    <div class="footer-content">
+        <b>Why Invest in Homestead?</b>
+        <p>Homestead is at the forefront of interplanetary tourism, with a solid financial performance and a promising future. Explore our FAQs to learn more about investment opportunities with Homestead.</p>
+        <b>Start Your Journey</b>
+        <p>Ready to invest in the future of space travel? Sign up now and become a part of the next era of exploration and adventure.</p>
+    </div>
+    <h3>Connect with Us<br>
+        <i class="fab fa-facebook"></i>&nbsp;&nbsp;
+        <i class="fab fa-twitter"></i>&nbsp;&nbsp;
+        <i class="fab fa-instagram"></i>&nbsp;&nbsp;
+    </h3>
+</footer>
+</body>
+</html>
