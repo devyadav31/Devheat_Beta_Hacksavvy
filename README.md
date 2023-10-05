@@ -81,13 +81,13 @@ On Home page click on "Investment Options" to see a list of companies that you c
 
 **💎 Mentor :**  Mr. Mayur Valecha Sir
 `3rd year`
-## ⚙️Contact us
 
-If you have any feedback, please reach out to us at hacksavvy@gmail.com
-## Used By
+## 🐤Used By
 
 This project is used by the following companies:
 
 - Homestead
 - Infocus
+## ⚙️Contact us
 
+If you have any feedback, please reach out to us at hacksavvy@gmail.com
