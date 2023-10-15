@@ -7,7 +7,7 @@ function closeForm() {
 
 function redirectToHomePage() {
     // You can replace 'home.html' with the actual URL of your home page.
-    window.location.href = 'cosmo capital.html';
+    window.location.href = '../cosmo capital.html';
 }
 
 document.getElementById('register-button').addEventListener('click', function() {

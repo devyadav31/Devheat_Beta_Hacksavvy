@@ -1,6 +1,6 @@
 function closeForm() {
     // Redirect to the home page URL after closing.
-    window.location.href = 'cosmo capital.html';
+    window.location.href = '../cosmo capital.html';
 }
 
 // You can add JavaScript logic here for handling the login functionality if needed.
